@@ -1,0 +1,24 @@
+`define DELAY 20
+module likeALU_testbench();
+
+reg inp_A, inp_B;
+reg [1:0] select;
+wire out;
+
+likeALU kasdkasdl (out, inA, inB, select);
+
+initial begin
+#`DELAY;
+select = 2'b00; inA = 1'b1; inB = 1'b1;
+#`DELAY;
+select = 2'b01; inA = 1'b1; inB = 1'b1;
+#`DELAY;
+select = 2'b10; inA = 1'b1; inB = 1'b1;
+#`DELAY;
+select = 2'b11; inA = 1'b1; inB = 1'b1;
+end
+
+initial
+begin
+$monitor("time = %2d, select =%2b, out= %1b, inA=%1b, inB=%1b ", $time, select, out, inA, inB);
+end

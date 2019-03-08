@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="HW4PT2_Client:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/HW4PT2_Client_jar</output-path>
+    <root id="archive" name="HW4PT2_Client.jar">
+      <element id="module-output" name="HW4PT2_Client" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Text?>
+
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.172-ea" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="300.0" prefWidth="400.0">
+         <children>
+            <ComboBox fx:id="combobox" layoutX="32.0" layoutY="26.0" prefWidth="150.0" />
+            <Button layoutX="301.0" layoutY="26.0" mnemonicParsing="false" onAction="#showButton" text="Produce" />
+            <Text fx:id="purpose" layoutX="32.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Text fx:id="skeleton" layoutX="32.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Text fx:id="engine" layoutX="32.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Text fx:id="seating" layoutX="32.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+         </children>
+      </Pane>
+   </children>
+</GridPane>

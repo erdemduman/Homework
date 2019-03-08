@@ -1,0 +1,24 @@
+`define DELAY 20
+module mux_4x1_testbench();
+
+reg s1, s2;
+wire bigO, o1, o2, o3, o4;
+
+mux_4x1 mux_tb (bigO, o1, o2, o3, o4, s1, s2);
+
+initial begin
+s1 = 1'b0; s2 = 1'b0;
+#`DELAY;
+s1 = 1'b1; s2 = 1'b0;
+#`DELAY;
+s1 = 1'b0; s2 = 1'b1;
+#`DELAY;
+s1 = 1'b1; s2 = 1'b1;
+end
+
+initial
+begin
+$monitor("time = %2d, s1 =%1b, s2=%1b, o1=%1b, o2=%1b, o3=%1b, o4=%1b, bigO=%1b", $time, s1, s2, o1, o2, o3, o4, bigO);
+end
+
+endmodule

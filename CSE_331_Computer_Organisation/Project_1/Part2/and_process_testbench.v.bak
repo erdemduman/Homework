@@ -1,0 +1,19 @@
+`define DELAY 20
+module and_process_testbench();
+
+reg inA, inB;
+wire out;
+
+and_process two_inp_and_process(out, inA, inB);
+
+initial begin
+inA = 1'b0; inB = 1'b0;
+#`DELAY;
+inA = 1'b0; inB = 1'b1;
+#`DELAY;
+inA = 1'b1; inB = 1'b0;
+#`DELAY;
+inA = 1'b1; inB = 1'b1;
+end
+
+endmodule

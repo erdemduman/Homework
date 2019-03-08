@@ -1,0 +1,5 @@
+https://www.math.toronto.edu/mathnet/questionCorner/geomsum.html
+http://www.math.com/tables/expansion/power.htm
+http://www.9math.com/book/sum-first-n-odd-natural-numbers
+https://stackoverflow.com/questions/9269918/setting-up-and-solving-a-recurrence-relation-for-a-recursive-function
+https://www.cs.cmu.edu/~cburch/survey/recurse/hanoiimpl.html

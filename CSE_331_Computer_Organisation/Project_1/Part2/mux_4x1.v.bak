@@ -1,0 +1,10 @@
+module mux_4x1(bigO, o1, o2, o3, o4, s1, s2);
+
+input s1, s2;
+output bigO, o1, o2, o3, o4;
+
+and output_for_first(o1, not(s1), not(s2));
+and output_for_second(o2, not(s1), s2);
+and output_for_third(o3, s1, not(s2));
+and output_for_fourth(o4, s1, s2);
+or last_output(bigO, output_for_first, output_for_second, output_for_third, output_for_fourth);

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Text?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="300.0" prefWidth="400.0">
+         <children>
+            <Text layoutX="167.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Base Suit" />
+            <Text layoutX="56.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Flamethrower" />
+            <Text layoutX="272.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Auto Rifle" />
+            <ComboBox fx:id="flame_thrower" layoutX="66.0" layoutY="106.0" prefHeight="26.0" prefWidth="63.0" />
+            <ComboBox fx:id="auto_rifle" layoutX="273.0" layoutY="106.0" prefHeight="26.0" prefWidth="63.0" />
+            <Text layoutX="48.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rocket Launcher" />
+            <Text layoutX="286.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Laser" />
+            <ComboBox fx:id="rocket_launcher" layoutX="68.0" layoutY="185.0" prefHeight="26.0" prefWidth="63.0" />
+            <ComboBox fx:id="laser" layoutX="274.0" layoutY="185.0" prefHeight="26.0" prefWidth="63.0" />
+            <Text layoutX="112.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cost" />
+            <Text layoutX="249.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Weight" />
+            <Text fx:id="cost" layoutX="112.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+            <Text fx:id="weight" layoutX="250.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+            <ComboBox fx:id="base_suit" layoutX="125.0" layoutY="39.0" prefWidth="150.0" />
+            <Button fx:id="show" layoutX="169.0" layoutY="240.0" mnemonicParsing="false" onAction="#showButton" text="Show" />
+         </children>
+      </Pane>
+   </children>
+</GridPane>
